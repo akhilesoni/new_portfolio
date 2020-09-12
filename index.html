@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Kodchasan' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Kristi' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Chilanka' rel='stylesheet'>
+    </head>
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+        <svg id="svgf" height="100%" width="100%" viewBox="0 0 1080 720" preserveAspectRatio="none">
+            <path class="bottum-poly1" d="M0 720 L1080 800 L1080 500 C800 700 600 600 0 660 " fill="rgb(60,60,142)"/>
+            <path class="bottum-poly" d="M0 720 L1080 800 L1080 500 C900 800 700 700 0 660 " fill="rgb(31,37,82)"/>
+            <path class="poly" d="M 0 -1 L 1165 1 V 0 C 1039 -28 968 -25 819 -3 C 691 -22 425 -10 371 -3 C 324 -9 81 -19 -1 0 Z" fill="rgb(31,37,82)" />
+        </svg>
+        <div class="designed">
+            <p>designed with love <span id="heart" style="color: rgb(255, 14, 155);">&#10084;</span></p>
+        </div>
+    <section class="sec1">
+        <h1 id="name-title">Akhlesh Soni</h1>
+        <p>I'm a 
+            <span id="span-dev" onmouseover="tog();">
+                <b  id="d" class="visible">developer</b>
+                <b id="s" class="invisible">student</b>
+                
+            </span>
+        </p>
+        <button id="btn">Wanna Know Me?</button>
+        <div id="social">
+            <a href="https://www.facebook.com/akhilesh.soni.75873" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/akhilesoni/" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/Akhilesoni" class="fa fa-twitter"></a>
+            <a href="https://github.com/akhilesoni" class="fa fa-github"></a>
+        </div>
+    </section>
+
+    
+
+
+    <script>
+
+        
+        var btn = document.getElementById('btn');
+        var change= anime({
+        targets:'.poly',
+        d: [
+        { value:"M 0 -1 L 1165 1 V 871 C 1113 1059 944 1033 828 905 C 682 826 572 829 403 945 C 292 1114 82 1082 -20 867 Z" },
+        
+            ],
+          easing: 'easeInQuad',
+        duration: 1500,
+        loop: false,
+        autoplay:false
+        });
+        anime({
+            targets:'.bottum-poly',
+            d: [
+                { value:"M0 720 L1080 800 L1080 700 C800 700 600 600 0 560" },
+                { value:"M0 720 L1080 800 L1080 500 C900 800 700 700 0 660" },
+                ],
+            easing: 'easeInOutQuad',
+            duration: 3000,
+            loop: true,
+            autoplay:true
+        });
+        anime({
+            targets:'.bottum-poly1',
+            d: [
+                { value:"M0 720 L1080 800 L1080 600 C800 600 500 500 0 560" },
+                { value:"M0 720 L1080 800 L1080 500 C800 700 600 600 0 660" },
+                ],
+            easing: 'easeInOutQuad',
+            duration: 4000,
+            loop: true,
+            autoplay:true
+            });
+
+   
+
+        btn.addEventListener('click', function(){
+            change.restart();
+        });
+
+        btn.addEventListener('click',function(){
+            window.setTimeout(function(){
+            window.location.href="resume.html"
+            },1700);
+        });
+
+
+        
+      
+       
+        
+       
+   
+    </script>
+
+    </body>
+</html>
