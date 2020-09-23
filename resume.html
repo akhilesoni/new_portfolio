@@ -14,6 +14,7 @@
 </head>
 <body id="resume-body" >
     <svg id="svgf" height="100%" width="100%" viewBox="0 0 1080 720" preserveAspectRatio="none">
+        <path class="poly" d="M 0 -1 L 1165 1 V 0 C 1039 -28 968 -25 819 -3 C 691 -22 425 -10 371 -3 C 324 -9 81 -19 -1 0 Z" fill="rgb(31,37,82)" />
         <path class="certain" d="M 0 -1 L 1165 1 V 1105 C 1218 2570 968 834 860 967 C 659 2662 504 758 426 943 C 320 2441 53 1457 -26 934 Z" fill="rgb(31,37,82)" />
     </svg>
     <div id="resume-sheet">
@@ -61,7 +62,12 @@
             
         </div>        
     </div>
+
+    <button   id="back_button">
+        <h3>&larr;</h3>
+    </button>
     <script>
+        var back_button = document.getElementById('back_button');
         anime({
         targets:'.certain',
         d: [
@@ -73,6 +79,31 @@
         loop: false,
         autoplay:true
         });
+
+        var change= anime({
+        targets:'.poly',
+        d: [
+        { value:"M 0 -1 L 1165 1 V 871 C 1113 1059 944 1033 828 905 C 682 826 572 829 403 945 C 292 1114 82 1082 -20 867 Z" },
+        
+            ],
+          easing: 'easeInQuad',
+        duration: 1500,
+        loop: false,
+        autoplay:false
+        });
+
+        back_button.addEventListener('click', function(){
+            change.restart();
+        });
+
+        back_button.addEventListener('click',function(){
+            window.setTimeout(function(){
+            window.location.href="index.html"
+            },1500);
+        });
+
+
+       
         
     </script>
 

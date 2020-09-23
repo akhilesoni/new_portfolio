@@ -12,10 +12,14 @@
     </head>
     <body>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+        
         <svg id="svgf" height="100%" width="100%" viewBox="0 0 1080 720" preserveAspectRatio="none">
             <path class="bottum-poly1" d="M0 720 L1080 800 L1080 500 C800 700 600 600 0 660 " fill="rgb(60,60,142)"/>
             <path class="bottum-poly" d="M0 720 L1080 800 L1080 500 C900 800 700 700 0 660 " fill="rgb(31,37,82)"/>
             <path class="poly" d="M 0 -1 L 1165 1 V 0 C 1039 -28 968 -25 819 -3 C 691 -22 425 -10 371 -3 C 324 -9 81 -19 -1 0 Z" fill="rgb(31,37,82)" />
+        </svg>
+        <svg id="svgf" height="100%" width="100%" viewBox="0 0 1080 720" preserveAspectRatio="none">
+            <path class="certain" d="M 0 -1 L 1165 1 V 1105 C 1218 2570 968 834 860 967 C 659 2662 504 758 426 943 C 320 2441 53 1457 -26 934 Z" fill="rgb(31,37,82)" />
         </svg>
         <div class="designed">
             <p>designed with love <span id="heart" style="color: rgb(255, 14, 155);">&#10084;</span></p>
@@ -63,7 +67,7 @@
                 { value:"M0 720 L1080 800 L1080 500 C900 800 700 700 0 660" },
                 ],
             easing: 'easeInOutQuad',
-            duration: 3000,
+            duration: 4000,
             loop: true,
             autoplay:true
         });
@@ -74,12 +78,12 @@
                 { value:"M0 720 L1080 800 L1080 500 C800 700 600 600 0 660" },
                 ],
             easing: 'easeInOutQuad',
-            duration: 4000,
+            duration: 5000,
             loop: true,
             autoplay:true
             });
 
-   
+            
 
         btn.addEventListener('click', function(){
             change.restart();
@@ -88,10 +92,20 @@
         btn.addEventListener('click',function(){
             window.setTimeout(function(){
             window.location.href="resume.html"
-            },1700);
+            },1500);
         });
 
-
+        anime({
+        targets:'.certain',
+        d: [
+        { value:"M 0 -1 L 1165 1 V 0 C 1039 -28 968 -25 819 -3 C 691 -22 425 -10 371 -3 C 324 -9 81 -19 -1 0 Z" },
+        
+            ],
+              easing: 'easeInOutQuad',
+            duration: 1500,
+        loop: false,
+        autoplay:true
+        });
         
       
        
