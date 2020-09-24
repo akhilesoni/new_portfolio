@@ -3,6 +3,8 @@
     <link href='https://fonts.googleapis.com/css?family=Kodchasan' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Kristi' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Chilanka' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akhlesh's Blog</title>
@@ -132,6 +134,44 @@
             position: relative;
             float: right;
         }
+        .footer{
+            text-align: center;
+            background-color: rgb(15, 15, 15);
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            display: flex;
+            flex-wrap:wrap ;
+            font-family: 'kodchasan';
+        }
+        
+
+        .fa {
+          padding: 20px;
+          font-size: 30px;
+          width: 30px;
+          text-align: center;
+          text-decoration: none;
+          margin: 4px 2px;
+         }
+         .footer a{
+             color: rgb(255, 255, 255);
+
+         }
+         .footer-left, .footer-right{
+             margin: auto;
+             font-family: 'kodchasan';
+         }
+         .footer-left h2{
+             border-bottom: 2px solid white;
+         }
+         .copyright{
+             background-color: rgb(15, 15, 15);
+             margin: 0;
+             padding: 10px;
+             color: white;
+             text-align: center;
+             font-family: 'chilanka';
+         }
     </style>
 </head>
 <body>
@@ -172,7 +212,21 @@
             </button>
             </a>
     
-   
+            <div class="footer">
+                <div class="footer-left">
+                 <h2>follow me on social media</h2>
+                 <div id="social">
+                     <a href="https://www.facebook.com/akhilesh.soni.75873" class="fa fa-facebook"></a>
+                     <a href="https://www.instagram.com/akhilesoni/" class="fa fa-instagram"></a>
+                     <a href="https://twitter.com/Akhilesoni" class="fa fa-twitter"></a>
+                     <a href="https://github.com/akhilesoni" class="fa fa-github"></a>
+                 </div>
+                </div>
+                <div class="footer-right">
+                   <p><i class="fa fa-map-marker"></i> Bhilai, Chhattisgarh, India </p>
+                </div>
+             </div>
+             <p class="copyright">	&#169; Designed by Akhilesh Soni</p>
 
 </body>
 </html>

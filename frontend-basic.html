@@ -5,14 +5,13 @@
     <link href='https://fonts.googleapis.com/css?family=Kodchasan' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Kristi' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Chilanka' rel='stylesheet'>
-
-
-
-    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Frontend Basics</title>
     <style>
         *{
             box-sizing: border-box;
         }
+       
         body{
             margin: 0;
         }
@@ -22,6 +21,8 @@
         }
         .center{
             font-family: 'Kodchasan';
+            border-left: 2px solid black;
+            border-right: 2px solid black;
         }
         .left h1{
             font-family: 'kristi';
@@ -32,11 +33,11 @@
         }
         .left h3{
             font-family: 'kodchasan';
-            background-color: rgb(116, 116, 238);
-            border-radius: 4px;
-            padding: 4px;
-            width: 200px;
+            background-color: rgb(255, 255, 255);
+            padding: 2px;
+            width: 150px;
             text-align: center;
+            border-left: 4px solid rgb(17, 77, 17);
 
         }
         .right{
@@ -45,6 +46,8 @@
         .left, .right,.center{
             padding: 20px;
         }
+        .center h2{
+            border-bottom: 2px solid black;        }
         
         .col-1 {width: 8.33%;}
         .col-2 {width: 16.66%;}
@@ -97,6 +100,52 @@
           margin: 0;
     
         }
+        .center img{
+            width: 100%;
+        }
+        .center span{
+            font-weight: 700;
+            border-left: 2px solid black;
+            padding-left: 2px;
+        }
+        .footer{
+            text-align: center;
+            background-color: rgb(15, 15, 15);
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            display: flex;
+            flex-wrap:wrap ;
+            font-family: 'kodchasan';
+        }
+        
+
+        .fa {
+          padding: 20px;
+          font-size: 30px;
+          width: 30px;
+          text-align: center;
+          text-decoration: none;
+          margin: 4px 2px;
+         }
+         .footer a{
+             color: rgb(255, 255, 255);
+
+         }
+         .footer-left, .footer-right{
+             margin: auto;
+             font-family: 'kodchasan';
+         }
+         .footer-left h2{
+             border-bottom: 2px solid white;
+         }
+         .copyright{
+             background-color: rgb(15, 15, 15);
+             margin: 0;
+             padding: 10px;
+             color: white;
+             text-align: center;
+             font-family: 'chilanka';
+         }
     </style>
 </head>
 <body>
@@ -108,10 +157,20 @@
         </div>
         <div class="center col-6">
             <h2>frontend basics</h2>
-           <p>welcome to blog today im going to teach you about frontend basic about frontend and how brower works</p>
+            <img src="images/frontend1.png" alt="">
+           <p>hello guys! you are here to know the basics of the frontend but before we start that let's have a bit knowladge about our lovely web browsers.</p>
+           <p><span>web browsers</span> are the interface that allows the client to communicate with the server, it's the main ingridient in the client server model. web browsers are actually those software that takes the server's address as input and send a request to server and collect the response form the server and serve that to the user.  </p>
+           <img src="images/webbrowser.jfif" alt="">
+           <p><span>request</span> is a object that collect information about the user and server as well it's a requset that sends data to server telling it the demand of the client.</p>
+           <p><span>response</span> is the object that is sends by the server for the given request. It comprise of the document that consist html + css + javascript files, which help the user to understand the response of the server.</p>
+           <p><span>Frontend</span> is basically a file that contains the three files html, css and javascript. As the name clears the front view of the website is the frontend. Lets learn more about the the comprise files.</p>
+           <img src="images/frontend.jpg" alt="">
+           <p><span>HTML</span> is the abbrevation for hyper text markup language. It's the root of the document that is presented to the client or user. It has some tags that helps us to create the document. </p>
+           <p><span>css</span> (cascading stylesheet) is the language that helps us to beautify the document and to make it more interactive to the user. It's basically a language to manipulate the property of the html element</p>
+           <p><span>javascript</span> is a programming language thats runs on the browser. It's used for creating dynamic pages, help in taking input manipulating data and help getting more about the events in the document. </p>
         </div>
         <div class="right col-3">
-            <h4>if you like my blog please subscribe it</h4>
+            <h3>Thanks for reading this blog if you like it plaese share it <span style="color: red;">&#10084;</span></h3>
         </div>
     </div>
     <a href="blog.html">
@@ -119,5 +178,21 @@
             &larr;
         </button>
     </a>
+
+    <div class="footer">
+       <div class="footer-left">
+        <h2>follow me on social media</h2>
+        <div id="social">
+            <a href="https://www.facebook.com/akhilesh.soni.75873" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/akhilesoni/" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/Akhilesoni" class="fa fa-twitter"></a>
+            <a href="https://github.com/akhilesoni" class="fa fa-github"></a>
+        </div>
+       </div>
+       <div class="footer-right">
+          <p><i class="fa fa-map-marker"></i> Bhilai, Chhattisgarh, India </p>
+       </div>
+    </div>
+    <p class="copyright">	&#169; Designed by Akhilesh Soni</p>
 </body>
 </html>
