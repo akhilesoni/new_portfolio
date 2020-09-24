@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Kodchasan' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Kristi' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Chilanka' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhlesh's Blog</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .head{
+
+            padding: 20px;
+            padding-top: 10px;
+
+        }
+        body{
+            margin: 0;
+        }
+
+        .head h1{
+            font-family: 'kristi';
+            font-size: 80px;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 0;
+            
+        }
+        .head h3{
+            font-family: 'kodchasan';
+            background-color: rgb(64, 64, 163);
+            border-radius: 4px;
+            padding: 4px;
+            width: 200px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            box-shadow: 1px 3px 5px rgb(155, 155, 155);
+
+        }
+        .head p{
+            font-family: 'chilanka';
+            padding-left: 10px;
+            
+        }
+        .card{
+            margin: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 1px 3px 5px rgb(155, 155, 155);
+            font-family: 'kodchasan';
+            max-width: 600px;
+            
+        }
+        .card a{
+            text-decoration: none;
+        }
+        .list{
+            display: flex;
+            flex-wrap:wrap ;
+            background-color: rgb(241, 241, 241);
+            margin: 0;
+
+        }
+        .card h2{
+            margin-top: 10px;
+        }
+        .card img{
+            width: 100%;
+        }
+        @media only screen and (max-width: 768px) {
+         /* For mobile phones: */
+        [class="card"] {
+        margin: 20px;
+            }
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Akhlesh soni</h1>
+        <h3>web developer</h3>
+        <p>welcome to my blog <span style="color: rgb(255, 0, 0);">&#10084;</span></p>
+    </div>
+
+    <div class="list">
+        
+            <div class="card">
+                <a href="frontend-basic.html">
+                    <h2>basics of frontend</h2>
+                    <img src="images/frontend.jpg" >
+                    <p>basic concept of frontend (html, css, javascript)</p>
+                </a>
+            </div>
+        
+      
+            <div class="card">
+                <a href="">
+                    <h2>Git and Github</h2>
+                    <img src="images/git.jpg" >
+                    <p>concept of version control (git & github)</p>
+                </a>
+            </div>
+        
+        
+    </div>
+
+</body>
+</html>
